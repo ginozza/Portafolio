@@ -136,7 +136,9 @@ body {
     }
 
     .header_menu {
+        flex-direction: column;
         justify-content: center;
+        gap: 40px;
     }
 
     .parent_container {
