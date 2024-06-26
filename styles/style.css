@@ -137,7 +137,7 @@ body {
 
     .header_menu {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         gap: 40px;
     }
 
