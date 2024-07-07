@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Simancas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png?">
 </head>
@@ -13,38 +14,51 @@
 <body>
     <header class="header">
         <nav class="header_menu">
-            <a class="header_menu_anchor" href="index.html">Home</a>
+            <a id="active-page" class="header_menu_anchor" href="index.html"><i class="fas fa-home"></i> Inicio</a>
             <a class="header_menu_anchor" href="about.html">Sobre mi</a>
             <a class="header_menu_anchor" href="curriculum.html">Curriculum</a>
         </nav>
+        <a class="theme-toggle-button" id="theme-toggle"> <i id="theme-icon" class="fas fa-moon"></i></a>
     </header>
+    <h1 class="p_container_content_title">Desarrollador entusiasta
+        <strong class="p_container_content_strong">en evolución constante</strong>
+    </h1>
     <main class="parent_container">
         <section class="p_container_content">
-            <h1 class="p_container_content_title">Desarrollador entusiasta
-                <strong class="p_container_content_strong">en evolución constante</strong>
-            </h1>
-            <p class="p_containter_content_text">¡Hola! Soy <strong class="p_containter_content_text_strong">Juan Simancas</strong>
-                , un estudiante de Ingeniería de Sistemas enfocado en desarrollar
-                y administrar proyectos que beneficien tanto a pequeños como grandes negocios.
-                Interesado en negocios, inversiones y fintech, me desarrollo como front-end y
-                back-end con la meta de ser full stack developer. ¡Contáctame!
+            <p class="p_containter_content_text">¡Hola! Soy <strong class="p_containter_content_text_strong">Juan
+                    Simancas</strong>, estudiante avanzado de Ingeniería de Sistemas
+                con un enfoque en desarrollo de software. Poseo una sólida comprensión de los principios de la
+                programación y el desarrollo de aplicaciones. Busco oportunidades para
+                aplicar y expandir mis conocimientos en entornos innovadores y desafiantes.
             </p>
-            <div class="p_container_links">
-                <h2 class="p_container_content_subtitle">Accede a mis redes:</h2>
-                <a class="p_container_links_anchor" href="https://github.com/ginozza">
-                    <img src="./assets/github.png" alt="Icono de Github">
-                    GitHub</a>
-                <a class="p_container_links_anchor" href="https://www.linkedin.com/in/juansimancas/">
-                    <img src="./assets/linkedin.png" alt="Icono de LinkedIn">
-                    LinkedIn</a>
+            <div class="p_container_description">
+                <h2 class="p_container_content_subtitle">¿De qué me equipo?</h2>
+                <div class="description-images">
+                    <img id="tech-image" src="https://skillicons.dev/icons?i=html,css,javascript,typescript,java,cpp,nodejs,python&theme=light" alt="Iconos de lenguajes y frameworks">
+                </div>
+            </div>
+            <div class="p_container_description">
+                <h2 class="p_container_content_subtitle">¿Cuáles herramientas soy capaz de usar?</h2>
+                <div class="description-images">
+                    <img id="tools-image" src="https://skillicons.dev/icons?i=git,github,linkedin,vscode,linux,bash,bootstrap,figma&theme=light" alt="Iconos de lenguajes y frameworks">
+                </div>
             </div>
         </section>
         <img class="p_container_content_image" src="./assets/portrait.png" alt="Avatar representativo">
 
     </main>
     <footer class="footer">
-        <p>Desarrollado para Alura Latam</p>
+        <p><strong>Contacto:</strong> <a class="footer-mail" id="gmail-link"
+                href="#">simancasmartinezjuanmanuel@gmail.com</a></p>
+        <nav class="footer-menu">
+            <a href="https://github.com/ginozza"><img class="footer-image" src="./assets/github.png"
+                    alt="Icono Github"></a>
+            <a href="https://www.linkedin.com/in/juansimancas"><img class="footer-image" src="./assets/linkedin.png"
+                    alt="Icono Linkedin"></a>
+        </nav>
     </footer>
+
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

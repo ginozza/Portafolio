@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Simancas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png?">
 </head>
 <body>
     <header class="header">
         <nav class="header_menu">
-            <a class="header_menu_anchor" href="index.html">Home</a>
+            <a class="header_menu_anchor" href="index.html"><i class="fas fa-home"></i> Inicio</a>
             <a class="header_menu_anchor" href="about.html">Sobre mi</a>
-            <a class="header_menu_anchor" href="curriculum.html">Curriculum</a>
+            <a id="active-page" class="header_menu_anchor" href="curriculum.html">Curriculum</a>
         </nav>
+        <a class="theme-toggle-button" id="theme-toggle"> <i id="theme-icon" class="fas fa-moon"></i></a>
     </header>
     <main class="parent_container">
         <section class="p_container_content">
@@ -51,7 +53,16 @@
         <img class="p_container_content_image" src="./assets/curriculum.png" alt="Avatar representativo">
     </main>
     <footer class="footer">
-        <p>Desarrollado para Alura Latam</p>
+        <p><strong>Contacto:</strong> <a class="footer-mail" id="gmail-link"
+                href="#">simancasmartinezjuanmanuel@gmail.com</a></p>
+        <nav class="footer-menu">
+            <a href="https://github.com/ginozza"><img class="footer-image" src="./assets/github.png"
+                    alt="Icono Github"></a>
+            <a href="https://www.linkedin.com/in/juansimancas"><img class="footer-image" src="./assets/linkedin.png"
+                    alt="Icono Linkedin"></a>
+        </nav>
     </footer>
+
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
