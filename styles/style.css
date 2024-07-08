@@ -50,9 +50,18 @@ header {
     gap: 30px;
 }
 
-.wizard-icon {
-    width: 40px;
-    height: 40px;
+.header_menu_anchor {
+    font-family: var(--font-open-sans);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #394651;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header_menu_anchor:hover {
+    transform: scale(1.07);
+    color: #bea0ba;
 }
 
 .theme-toggle-button {
@@ -76,20 +85,7 @@ header {
     background-color: #DEDEDE;
 }
 
-.header_menu_anchor {
-    font-family: var(--font-open-sans);
-    font-size: 1rem;
-    font-weight: 700;
-    color: #394651;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.header_menu_anchor:hover {
-    transform: scale(1.07);
-    color: #bea0ba;
-}
-
+/* Parent container */
 .parent_container {
     display: flex;
     align-items: center;
@@ -144,7 +140,6 @@ header {
     width: 30%;
 }
 
-/* Tipografía */
 .p_container_content_strong {
     color: var(--tertiary-color-light); 
 }
@@ -161,10 +156,6 @@ header {
     font-family: var(--font-open-sans);
     margin: 2%;
     color: black;
-}
-
-.title-divisor {
-    width: 90%;
 }
 
 .p_containter_content_text {
@@ -229,27 +220,6 @@ header {
     color: #DEDEDE;
 }
 
-@media (max-width: 1200px) {
-    .header {
-        padding: 10%;
-    }
-
-    .header_menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .parent_container {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .p_container_content {
-        width: auto;
-    }
-}
-
 /* Estilos para tema oscuro */
 body.dark-theme {
     background-color: var(--main-color-dark);
@@ -274,13 +244,35 @@ body.dark-theme .theme-toggle-button {
 }
 
 .header.dark-theme #theme-toggle {
-    background-color: #333; /* Color de fondo del toggle en modo oscuro */
+    background-color: #333;
 }
 
 .header.dark-theme #theme-toggle:hover {
-    background-color: #444; /* Color de fondo del toggle en modo oscuro al hacer hover */
+    background-color: #444;
 }
 
 .header.dark-theme .header_menu_anchor {
-    color: white; /* Color del texto del menú en modo oscuro */
+    color: white;
+}
+
+/* Estilos responsivos*/
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header_menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .parent_container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .p_container_content {
+        width: auto;
+    }
 }
